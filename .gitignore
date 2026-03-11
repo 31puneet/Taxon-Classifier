@@ -1,0 +1,13 @@
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.gz
+*.fastq
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
