@@ -1,0 +1,12 @@
+{
+  "k": 21,
+  "samples": 120,
+  "features": 1048576,
+  "sparsity": 0.449817,
+  "accuracy": 0.975,
+  "macro_f1": 0.975,
+  "time_load_s": 14.59,
+  "time_cv_s": 9848.61,
+  "time_train_s": 3166.04,
+  "time_total_s": 13029.9
+}
