@@ -1,8 +1,6 @@
 #  Taxon-Classifier
 
-A FASTQ-based machine learning classifier that identifies **Anopheles** mosquito species directly from raw sequencing reads — no alignment or variant calling required.
-
-Built as part of a [MalariaGEN GSoC 2026 proposal](https://www.malariagen.net/) for lightweight taxonomic identification of malaria vectors.
+A FASTQ-based machine learning classifier that identifies **Anopheles** mosquito species directly from raw sequencing reads - no alignment or variant calling required.
 
 ## What is it?
 
@@ -43,59 +41,8 @@ Raw FASTQ reads → K-mer extraction → Hashing (2²⁰ bins) → LightGBM → 
 2. **Train**: Train a LightGBM model with stratified cross-validation
 3. **Evaluate**: Predict species from unseen FASTQ files with confidence scores
 
-## Local Setup
 
-### 1. Clone the repository
 
-```bash
-git clone https://github.com/31puneet/Taxon-Classifier.git
-cd Taxon-Classifier
-```
-
-### 2. Create and activate virtual environment
-
-```bash
-python -m venv venv
-source venv/bin/activate        # Linux/Mac
-# venv\Scripts\activate         # Windows
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run evaluation (pre-trained models included)
-
-```bash
-cd src/evaluation
-python evaluate_models.py --k 15
-```
-
-### 5. Run noise injection test
-
-```bash
-python poison_test.py --k 15
-```
-
-### 6. Run the full pipeline (requires internet for ENA streaming)
-
-```bash
-cd src
-python main.py --k 15
-```
-
-Or run individual steps:
-
-```bash
-
-cd src/scripts
-python extract_kmers.py --k 15
-python train_models.py --k 15
-cd ../evaluation
-python evaluate_models.py --k 15
-```
 
 ## Visualizations
 
