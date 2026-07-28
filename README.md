@@ -21,7 +21,7 @@ This tool classifies mosquito samples into **three major species groups** using 
 - **LightGBM classifier** — fast, handles sparse high-dimensional data natively
 - **Multiple k-mer sizes** — tested with k=15 (98.3% accuracy) and k=21 (97.5% accuracy)
 - **Noise robust** — maintains 100% accuracy up to 10% base substitution error rate
-- **Low read depth** — reliable classification with as few as 1,000 reads
+- **Low read depth** — reliable classification with as few as 1,000 reads.
 
 ## Results
 
